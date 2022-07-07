@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.tarjetasProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(248, 204, 10);
+    h3{text-align: center;}
+    p{
+        margin: 5px;
+        text-align: center;
+    }
+    button{
+        margin: 10px;
+    }
+}
