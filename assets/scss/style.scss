@@ -1,3 +1,4 @@
+@import "var"
 *{
     margin: 0;
     padding: 0;
@@ -7,13 +8,33 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: rgb(248, 204, 10);
+    background-color: rgba(206, 171, 15, 0.849);
     h3{text-align: center;}
     p{
-        margin: 5px;
+        margin: 7px;
         text-align: center;
     }
     button{
-        margin: 10px;
+        margin: 17px;
     }
+}
+
+@each $key , $var in $colores {
+    .btn-#{$key}{
+        @extend .btn;
+        background-color: $var;
+    }
+}
+@mixin propiedades($ancho,$alto,$colorletra) {
+    width: $ancho;
+    height: $alto;
+    color: $colorletra;
+}
+    
+.btn{
+    padding: map-get($btn , padding );
+    border: map-get($btn , border );
+    border-radius: map-get($btn, radius );
+    @include propiedades(100px,auto ,rgb(245, 33, 33) )
+    
 }
