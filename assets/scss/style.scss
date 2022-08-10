@@ -3,21 +3,7 @@
     margin: 0;
     padding: 0;
 }
-.tarjetasProductos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: rgba(206, 171, 15, 0.849);
-    h3{text-align: center;}
-    p{
-        margin: 7px;
-        text-align: center;
-    }
-    button{
-        margin: 17px;
-    }
-}
+
 
 @each $key , $var in $colores {
     .btn-#{$key}{

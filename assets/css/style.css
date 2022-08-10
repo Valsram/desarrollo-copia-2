@@ -3,12 +3,35 @@
   padding: 0;
 }
 
+.fondoGeneral{
+  background-color: rgb(239, 215, 250);
+}
 .tarjetasProductos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 250px;
+  align-items: center;
+  border-radius: 1px solid rgb(247, 202, 3);
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(216, 204, 96);
+  
+ }
+ .btn{
+  background-color: rgb(152, 50, 248);
+ }
+ .tarejetas{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: rgb(248, 204, 10);
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .tarjetasProductos h3 {
   text-align: center;
@@ -19,4 +42,60 @@
 }
 .tarjetasProductos button {
   margin: 10px;
-}/*# sourceMappingURL=style.css.map */
+}
+.tarjeta__img{
+width: 100%;
+}
+.portadaImg{
+  background-image: url(../img/portada2.png);
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.portadaImg h1{
+   display: flex;
+   justify-content: center;
+   
+}
+.portadaImg p{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: medium;
+
+}
+.foto1 p{
+  display: flex;
+  text-align: center;
+}
+.foto2 p{
+  display: flex;
+  text-align: center;
+}
+.footer2{
+  background-color: aqua;
+}
+.parrafos1{
+  background-image: url(../img/eggs-3281585__340.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.nosotrosParrafo{
+  background-image: url(../img/eggs-1111587__340.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  flex-wrap: wrap;
+}
+.nosotrosParrafo p{
+  display: flex;
+  text-align: center;
+  margin: 15px;
+  color: black;
+}
+.nosotrosParrafo h2{
+  display: flex;
+  justify-content: center;
+}
